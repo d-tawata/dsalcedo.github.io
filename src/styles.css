@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+a.active {
+  text-decoration: underline;
+  background-color: #eee;
+}
+
+.modal {
+  display: block !important;
+}
