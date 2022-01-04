@@ -16,17 +16,17 @@ export default class Projects extends React.Component {
                   href="https://unsplash.com/photos/HkTMcmlMOUQ"
                   target="_blank"
                 > */}
-                  <div class="content-overlay"></div>
-                  <img
-                    src={`${process.env.PUBLIC_URL}/assets/images/projects/AME441.png`}
-                    className="rounded mx-auto d-block my-2"
-                    alt="..."
-                  ></img>
-                  <div class="content-details fadeIn-top">
-                    <h6>This is a title</h6>
-                    <p>This is a short description</p>
-                  </div>
-                </a>
+                <div class="content-overlay"></div>
+                <img
+                  src={`${process.env.PUBLIC_URL}/assets/images/projects/AME441.png`}
+                  className="rounded mx-auto d-block my-2"
+                  alt="..."
+                ></img>
+                <div class="content-details fadeIn-top">
+                  <h6>This is a title</h6>
+                  <p>This is a short description</p>
+                </div>
+                {/* </a> */}
               </div>
               <img
                 src={`${process.env.PUBLIC_URL}/assets/images/projects/Boeing Freshman.jpg`}
