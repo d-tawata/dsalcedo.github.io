@@ -10,8 +10,8 @@ export default class Projects extends React.Component {
           <div className="row">
             <div className="col">
               <div class="content">
-                <Link to={`/projects/1`}>
-                </Link>
+                {/* <Link to={`/projects/1`}>
+                </Link> */}
                 {/* <a
                   href="https://unsplash.com/photos/HkTMcmlMOUQ"
                   target="_blank"
