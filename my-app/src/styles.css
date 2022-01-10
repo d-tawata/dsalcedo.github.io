@@ -12,16 +12,57 @@ code {
     monospace;
 }
 
+.about-me a {
+  text-decoration: none;
+  color: #4a4e69;
+}
+
+.about-me a:hover {
+  text-decoration: none;
+  color: #9a8c98;
+}
+
+/* .center { */
+  /* margin: auto; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* display: block; */
+  /* width: 50%; */
+/* }  */
+
+.nav-tabs > li > a{
+  color:#4a4e69 !important;
+}
+
+.nav-tabs > li > a.active{
+  background-color: #4a4e69 !important;
+  color:white !important;
+}
+
+  .nav-tabs > li.active > a:hover {
+  background-color:#4a4e69 !important;
+  color:white !important;
+        }
+
+.nav-link-color {
+  color: #4a4e69;
+}
+
+
+/* .container {
+  width: 200px;
+} */
+
 .row {
 display: flex;
 flex-wrap: wrap;
 padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create three equal columns that sits next to each other */
 .column {
-flex: 25%;
-max-width: 25%;
+flex: 33%;
+max-width: 33%;
 padding: 0 4px;
 }
 
@@ -39,20 +80,86 @@ img {
   height: auto;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-.column {
-flex: 50%;
-max-width: 50%;
-}
+/* Create three equal columns that sits next to each other */
+.column2 {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+.column2 img {
+margin-top: 8px;
+vertical-align: middle;
+/* width: 100%; */
+/* width: 20px; */
+/* width: 200px;
+height: auto; */
+}
+
+.column3 {
+flex: 50%;
+max-width: 50%;
+padding: 0 4px;
+}
+
+.column3 img {
+margin-top: 8px;
+vertical-align: middle;
+/* width: 100%; */
+/* width: 20px; */
+/* width: 200px;
+height: auto; */
+}
+
+.column4 {
+flex: 50%;
+max-width: 50%;
+padding: 0 4px;
+}
+
+.column4 img {
+margin-top: 8px;
+vertical-align: middle;
+/* width: 100%; */
+/* width: 20px; */
+/* width: 200px;
+height: auto; */
+}
+
+/* Responsive layout - makes a two column-layout instead of three columns */
+@media screen and (max-width: 800px) {
 .column {
 flex: 100%;
 max-width: 100%;
 }
+.column2 {
+  flex: 50%;
+  max-width: 50%;
+}
+.column3 {
+  flex: 100%;
+  max-width: 100%;
+}
+.column4 {
+  flex: 100%;
+  max-width: 100%;
+}
+}
+
+/* Responsive layout - makes one column stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+/* .column {
+flex: 100%;
+max-width: 100%;
+} */
+.column2 {
+  flex: 100%;
+  max-width: 100%;
+}
+/* .column3 {
+  flex: 100%;
+  max-width: 100%;
+} */
 }
 
 
@@ -64,13 +171,20 @@ max-width: 100%;
   overflow: hidden;
 }
 
+.content2 {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  /* margin: auto; */
+  overflow: hidden;
+}
 .content .content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
   height: 99%;
   width: 100%;
   left: 0;
-  top: 0;
+  top: 0.5rem;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -126,4 +240,235 @@ max-width: 100%;
 
 .fadeIn-top{
   top: 20%;
+}
+
+.projectImg {
+  /* width: 25%; */
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: #eee;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid #eee;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: #3d405b;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: #3d405b; 
+}
+
+.btn-url a {
+  text-decoration: none;
+  color: #3d405b;
+}
+
+.btn-url a:hover {
+  color: #3d405b;
+}
+
+/* CSS */
+.btn-url {
+  font-size: 16px;
+  /* font-weight: 400; */
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-url:after {
+  content: "";
+  background-color: #f4f1de;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.btn-url:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .btn-url {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+
+/* CSS */
+.btn-return {
+  background-color: rgba(51, 51, 51, 0.05);
+  border-radius: 8px;
+  border-width: 0;
+  color: #333333;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #3d405b;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #3d405b;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+
+/* NoMatch (404 Page) */
+*{
+    transition: all 0.6s;
+}
+
+#main{
+    display: table;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+.fof{
+	  display: table-cell;
+	  vertical-align: middle;
+}
+
+.fof h1{
+	  font-size: 50px;
+	  display: inline-block;
+	  padding-right: 12px;
+	  animation: type .5s alternate infinite;
+    color: #22223b;
+}
+
+.fof p{
+    color: #4a4e69;
+}
+
+@keyframes type{
+	  from{box-shadow: inset -3px 0px 0px #9a8c98;}
+	  to{box-shadow: inset -3px 0px 0px transparent;}
 }
