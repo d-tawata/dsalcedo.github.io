@@ -8,7 +8,7 @@ export default class Navigation extends React.Component {
           <nav>
             <div className="row">
               <h1 className="mx-auto col-auto display-1">
-                DIANA SALCEDO-PIERCE
+                DIANA SALCEDO
               </h1>
             </div>
 
