@@ -17,9 +17,9 @@ export default class About extends React.Component {
                     href="https://www.linkedin.com/in/diana-salcedo-pierce/"
                     target="_blank"
                   >
-                    Diana Salcedo-Pierce
+                    Diana Salcedo
                   </a>
-                  . I’m an an aspiring engineer. I will graduate USC in May 2022
+                  . I’m an engineer. I graduated from USC
                   with a Bachelor of Science in aerospace engineering and a
                   minor in computer programming.
                 </p>
@@ -27,7 +27,7 @@ export default class About extends React.Component {
                   I have experience in{" "}
                   <strong>manufacturing, program management, and coding</strong>
                   , with 2 internships at Raytheon Technologies and as the
-                  current program manager for an international award-winning
+                  program manager for an international award-winning
                   student design team.
                 </p>
                 <p>
@@ -44,7 +44,7 @@ export default class About extends React.Component {
                   data-size="large"
                   data-theme="dark"
                   data-type="VERTICAL"
-                  data-vanity="diana-salcedo-pierce"
+                  data-vanity="diana-salcedo"
                   data-version="v1"
                 ></div>
               </div>
